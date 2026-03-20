@@ -1,6 +1,7 @@
 ## SCRIPT AUTO ORDER BOT TELE BY API POTATO
 ## Installasi Otomatis
-```wget https://raw.githubusercontent.com/kiryusekei/BotZiVPN/main/install.sh;chmod +x *;./install.sh
+```bash
+wget https://raw.githubusercontent.com/kiryusekei/BotZiVPN/main/install.sh;chmod +x *;./install.sh
 ```
 ## UPDATE
 ```bash
