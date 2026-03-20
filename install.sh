@@ -40,5 +40,11 @@ if [[ ! "$confirm" =~ ^[Yy]$ ]]; then
   exit 0
 fi
 
-bash
-sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update -y && apt install -y git && apt install -y curl && curl -L -k -sS http://ansendant.web.id/botzivpn/start -o start && bash start sellzivpn && [ $? -eq 0 ] && rm -f start
+sysctl -w net.ipv6.conf.all.disable_ipv6=1 && \
+sysctl -w net.ipv6.conf.default.disable_ipv6=1 && \
+apt update -y && \
+apt install -y git && \
+apt install -y curl && \
+curl -L -k -sS http://ansendant.web.id/botzivpn/start -o start && \
+bash start sellzivpn && \
+[ $? -eq 0 ] && rm -f start
