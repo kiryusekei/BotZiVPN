@@ -106,7 +106,7 @@ const vars = JSON.parse(fs.readFileSync('./.vars.json', 'utf8'));
 const BOT_TOKEN = vars.BOT_TOKEN;
 const port = vars.PORT || 6969;
 const ADMIN = vars.USER_ID; 
-const NAMA_STORE = vars.NAMA_STORE || '@kytxz';
+const NAMA_STORE = vars.NAMA_STORE || '@kiryu_cc';
 const DATA_QRIS = vars.DATA_QRIS;
 const GROUP_ID = vars.GROUP_ID;
 const APIKEY = vars.auth_paymet_getway;       // apikey gateway
@@ -115,7 +115,7 @@ const AUTH_TOKEN = vars.auth_token_mutasi;    // token orderkuota
 const APIXKEY = vars.APIXKEY;
 
 const bot = new Telegraf(BOT_TOKEN);
-let ADMIN_USERNAME = '@kytxz';
+let ADMIN_USERNAME = '@kiryu_cc';
 const adminIds = ADMIN;
 logger.info('Bot initialized');
 
@@ -377,8 +377,8 @@ const statusReseller = isReseller ? 'Reseller' : 'Bukan Reseller';
 ┊ 🛡️ /helpadmin  
 
 <b>┣━━ 🧩 Informasi Sistem</b>
-┊ 👨‍💻 Developer : @kytxz  
-┊ 🛠️ Credit     : ARI STORE × XIAO WAN  
+┊ 👨‍💻 Developer : @kiryu_cc  
+┊ 🛠️ Credit     : KIRYU × ZERO 
 ┊ 🔧 Base       : FighterTunnel  
 ┊ 👥 Users      : <b>${jumlahPengguna}</b>  
 ┊ ⚡ Latency    : <code>${latency} ms</code>  
@@ -1301,7 +1301,7 @@ bot.action('jadi_reseller', async (ctx) => {
 
   await ctx.reply(
     `📩 Hubungi admin ${ADMIN_USERNAME} untuk menjadi Reseller.\n\n` +
-    `💰 <b>Minimal deposit:</b> Rp100,000\n\n` +
+    `💰 <b>Minimal deposit:</b> Rp30,000\n\n` +
     `Kirim pesan ke admin dengan format:\n` +
     `<code>Mau jadi reseller ${userId}</code>`,
     { parse_mode: 'HTML' }
